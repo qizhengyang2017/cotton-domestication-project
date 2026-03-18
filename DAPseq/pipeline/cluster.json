@@ -1,0 +1,19 @@
+{
+    "__default__" :
+    {
+        "queue"     : "normal",
+        "nCPUs"     : "1",
+        "memory"    : 20000,
+        "resources" : "\"rusage[mem=20000]\"",
+        "name"      : "JOBNAME.{rule}.{wildcards}",
+        "output"    : "logs/cluster/{rule}.{wildcards}.out",
+        "error"     : "logs/cluster/{rule}.{wildcards}.err"
+    },
+
+    "bowtie2_mapping" :
+    {
+        "queue"     : "normal",
+        "memory"    : 40000,
+        "resources" : "\"rusage[mem=40000]\""
+    }
+}
