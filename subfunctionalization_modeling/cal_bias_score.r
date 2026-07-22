@@ -9,7 +9,7 @@ files <- paste0("effective_exp_gene/cultivar_semi_merge_", timepoints, "_filter.
 names(files) <- timepoints
 
 # read homologous gene pairs
-homologs <- read_tsv("/data/cotton/jqyou/hg_task/allm_hom_20189_name.txt", col_names = c("Gene_At", "Gene_Dt"))
+homologs <- read_tsv("/path/to/hg_task/allm_hom_20189_name.txt", col_names = c("Gene_At", "Gene_Dt"))
 
 # read data for all timepoints into a list
 expression_list <- map(files, ~ read_tsv(.x))
